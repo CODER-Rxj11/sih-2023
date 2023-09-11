@@ -1,6 +1,5 @@
 "use client"
 
-import { CacheProvider } from '@emotion/react'
 import './globals.css'
 import { ChakraProvider } from '@chakra-ui/react'
 
