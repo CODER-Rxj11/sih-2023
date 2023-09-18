@@ -1,9 +1,6 @@
 "use client"
-
-import { CacheProvider } from '@emotion/react'
+import {ChakraProvider} from '@chakra-ui/react'
 import './globals.css'
-import { ChakraProvider } from '@chakra-ui/react'
-
 export const metadata = {
   title: 'ODOP : J&K',
   description: 'ODOP : J&K',
