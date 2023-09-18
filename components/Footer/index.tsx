@@ -46,7 +46,7 @@ const SocialButton = ({
   href: string;
 }) => {
   return (
-    <chakra.button
+    <chakra.button mt={5}
       bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
       rounded={"full"}
       w={8}
