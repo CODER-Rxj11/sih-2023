@@ -1,26 +1,48 @@
 "use client"
-import { Center, Square, Text } from "@chakra-ui/react";
+
 import Slider from "react-slick";
-import Slide from "../Slide";
 
-
-export default function CarouselComponent() {
+export default function index() {
 
   const settings = {
     dots: true,
     infinite: true,
-    speed: 2000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
     autoplay:true,
     autoplaySpeed:2000,
-    cssEase:"linear"
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
 
   return (
-    <>
-      <div className="w-80 h-100">
-        <h2>Auto Play</h2>
+    <div>
+    <h2> Single Item</h2>
         <Slider {...settings}>
           <div>
             <h3>1</h3>
@@ -42,6 +64,5 @@ export default function CarouselComponent() {
           </div>
         </Slider>
       </div>
-    </>
-  );
+  )
 }
