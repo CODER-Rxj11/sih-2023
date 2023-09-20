@@ -8,7 +8,6 @@ import Image from "next/image";
 export default function CarouselComponent() {
 
   const settings = {
-    dots: true,
     infinite: true,
     speed: 2000,
     slidesToShow: 3,
@@ -20,38 +19,42 @@ export default function CarouselComponent() {
 
   return (
     <>
-      <div className="py-10">
-        <h2>Auto Play</h2>
+      <div style={{ marginTop: "5em" }}>
+        <Center
+          style={{ marginBottom: "1em" }}
+          as="h1"
+          color={"blue.200"}
+          fontSize={"5xl"}
+        >
+          Districts
+        </Center>
         <Slider {...settings}>
-          <div>
-            <Center w={300} h={300} bg={"blue.100"}>
-              <h1 className="text-2xl">Doda</h1>
-            </Center>
+          <div className="p-1 bg-black-400">
+            <Center
+              w={300}
+              h={300}
+              bgImage="https://districts.ecourts.gov.in/sites/default/files/Map2.jpg"
+              bgPosition={"center"}
+              bgSize={"cover"}
+            ></Center>
           </div>
-          <div>
-            <Center w={300} h={300} bg={"blue.200"}>
-              <h1 className="text-2xl">Pulwama</h1>
-            </Center>
+          <div className="p-1 bg-black-400">
+            <Center
+              w={300}
+              h={300}
+              bgImage="https://im.hunt.in/cg/jk/Kathua/City-Guide/about-1.png"
+              bgPosition={"center"}
+              bgSize={"cover"}
+            ></Center>
           </div>
-          <div>
-            <Center w={300} h={300} bg={"blue.300"}>
-              <h1 className="text-2xl">Khatua</h1>
-            </Center>
-          </div>
-          <div>
-            <Center w={300} h={300} bg={"blue.400"}>
-              <h1 className="text-2xl">Jammu</h1>
-            </Center>
-          </div>
-          <div>
-            <Center w={300} h={300} bg={"blue.500"}>
-              <h1 className="text-2xl">Poonch</h1>
-            </Center>
-          </div>
-          <div>
-            <Center w={300} h={300} bg={"blue.400"} >
-              <h1 className="text-2xl">Gulmargh</h1>
-            </Center>
+          <div className="p-1 bg-black-400">
+            <Center
+              w={300}
+              h={300}
+              bgImage="https://www.mapsofindia.com/maps/jammuandkashmir/districts/samba-district-map.jpg"
+              bgPosition={"center"}
+              bgSize={"cover"}
+            ></Center>
           </div>
         </Slider>
       </div>
