@@ -9,15 +9,17 @@ const MAPBOX_TOKEN =
 
 export default function MapComponent() {
   return (
-    <Map
-      initialViewState={{
-        latitude: 34.0837,
-        longitude: 74.7973,
-        zoom: 6,
-      }}
-      style={{margin: "auto", width: "80vw", height: "100vh" }}
-      mapStyle="mapbox://styles/simmmple/ckwxecg1wapzp14s9qlus38p0"
-      mapboxAccessToken={MAPBOX_TOKEN}
-    ></Map>
+    <div className="m-10">
+      <Map
+        initialViewState={{
+          latitude: 34.0837,
+          longitude: 74.7973,
+          zoom: 6,
+        }}
+        style={{ margin: "auto", width: "80vw", height: "100vh" }}
+        mapStyle="mapbox://styles/simmmple/ckwxecg1wapzp14s9qlus38p0"
+        mapboxAccessToken={MAPBOX_TOKEN}
+      ></Map>
+    </div>
   );
 }

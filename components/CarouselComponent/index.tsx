@@ -2,6 +2,7 @@
 import { Center, Square, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import Slide from "../Slide";
+import Image from "next/image";
 
 
 export default function CarouselComponent() {
@@ -19,26 +20,38 @@ export default function CarouselComponent() {
 
   return (
     <>
-      <div className="w-80 h-100">
+      <div className="py-10">
         <h2>Auto Play</h2>
         <Slider {...settings}>
           <div>
-            <h3>1</h3>
+            <Center w={300} h={300} bg={"blue.100"}>
+              <h1 className="text-2xl">Doda</h1>
+            </Center>
           </div>
           <div>
-            <h3>2</h3>
+            <Center w={300} h={300} bg={"blue.200"}>
+              <h1 className="text-2xl">Pulwama</h1>
+            </Center>
           </div>
           <div>
-            <h3>3</h3>
+            <Center w={300} h={300} bg={"blue.300"}>
+              <h1 className="text-2xl">Khatua</h1>
+            </Center>
           </div>
           <div>
-            <h3>4</h3>
+            <Center w={300} h={300} bg={"blue.400"}>
+              <h1 className="text-2xl">Jammu</h1>
+            </Center>
           </div>
           <div>
-            <h3>5</h3>
+            <Center w={300} h={300} bg={"blue.500"}>
+              <h1 className="text-2xl">Poonch</h1>
+            </Center>
           </div>
           <div>
-            <h3>6</h3>
+            <Center w={300} h={300} bg={"blue.400"} >
+              <h1 className="text-2xl">Gulmargh</h1>
+            </Center>
           </div>
         </Slider>
       </div>

@@ -9,9 +9,9 @@ import CarouselComponent from "../../components/CarouselComponent";
 import Auth from "../../components/Auth"
 
 export default function Home() {
-    return <div className="flex flex-col overflow-x-hidden">
+    return <div className="flex flex-col overflow-x-hidden m-3">
     <Navbar />
-    {/* <Slide /> */}
+    <Slide />
     <Welcome />
     <CarouselComponent />
     <MapComponent />
